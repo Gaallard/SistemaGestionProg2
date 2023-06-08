@@ -2,7 +2,7 @@
 #include "transaccion/transaccion.h"
 #include <iostream>
 
-using namespace std; 
+using namespace std;     
 
 
 
@@ -31,7 +31,19 @@ int main(){
     }
 
 
-    transaccion1.MostrarPorPeriodo(); 
+    cout<<"ingrese un numero"<<endl; 
+    int nro;
+    try{
+        cin>>nro;
+        if(nro<0){
+            throw 1; 
+        }
+    }catch(exception &e){
+        
+    }
+
+
+    //transaccion1.MostrarPorPeriodo(); 
 
     return 0;
 }
